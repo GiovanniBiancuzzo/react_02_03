@@ -10,11 +10,11 @@ const NavbarComponent = () => {
     return (
         <Navbar
             collapseOnSelect
-            expand="lg"
+            expand="md"
             className="navbar navbar-expand-lg navbar-dark"
         >
             <Link to="/">
-                <Navbar.Brand href="https://www.netflix.com">
+                <Navbar.Brand>
                     <img
                         src="/public/logo.png"
                         width="100px"

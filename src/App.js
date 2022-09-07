@@ -15,16 +15,22 @@ function App () {
   return (
     <BrowserRouter>
       <NavbarComponent />
-      <TitlebarComponent />
       <Routes>
         <Route path='/' element={
-          <Home />} />
+          <>
+            <Home />
+            <TitlebarComponent />
+          </>
+        } />
         <Route path='/tvshows' element={
           <TvShows />} />
-        <Route path='/moviedetails' element={
+        <Route path='/moviedetails/:movieId' element={
           <MovieDetails />} />
+        {/* serve lasciare questa route */}
         <Route path='/tvshows' element={
           <TvShows />} />
+        <Route path='*' element={
+          <Home />} />
       </Routes>
       <FooterComponent />
     </BrowserRouter>
